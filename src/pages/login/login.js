@@ -3,6 +3,7 @@ import { urlencoded } from "express";
 import React, { useState, useContext } from "react";
 import { Form, Button } from "react-bootstrap";
 import { MyContext } from "../../context";
+import './backgroundimg'
 
 
 
@@ -24,7 +25,7 @@ function Login() {
   }
 
   return (
-  <div className="col-5" style={{backgroundImage: url('./caldo.jpg')}}> 
+  <div className="col-5"> 
     <Form onSubmit={handleLogin}>
     <Form.Group className="mb-3" controlId="formBasicEmail" style={{position:'relative', margin:'40px',padding:'20px'}}>
       <Form.Label className="text-light">Email address</Form.Label>
@@ -54,6 +55,7 @@ function Login() {
     <Button variant="primary" type="submit" style={{position:'relative',left:'60px',bottom:'30px'}}>
       Login
     </Button>
+
     </Form>
   </div>
   );
